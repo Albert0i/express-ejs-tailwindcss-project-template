@@ -1,0 +1,30 @@
+{
+  "name": "express-ejs-tailwindcss-project-template",
+  "version": "1.0.0",
+  "description": "[Setting up Express MVC + EJS + TailwindCSS (4.0)](https://medium.com/@hannnirin/setting-up-express-mvc-ejs-tailwindcss-4-0-2ccac72dad59)",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/server.js",
+    "build:css": "postcss ./src/public/styles/styles.css -o ./src/public/styles/build.css --watch",
+    "dev": "concurrently \"npm:build:css\" \"npm:start\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "ejs": "^4.0.1",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.2.0",
+    "autoprefixer": "^10.4.24",
+    "concurrently": "^9.2.1",
+    "nodemon": "^3.1.14",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
+    "prettier": "^3.8.1",
+    "tailwindcss": "^4.2.0"
+  }
+}
